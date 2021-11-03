@@ -11,7 +11,7 @@ namespace _05_GreetingConsoleApp
         static void Main(string[] args)
         {
             ProgramUI ui = new ProgramUI();
-            ui.RunMenu();
+            ui.Run();
             Console.ReadKey();
         }
     }

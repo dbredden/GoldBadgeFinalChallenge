@@ -9,7 +9,7 @@ namespace _05_GreetingConsoleApp
 {
     public class ProgramUI
     {
-        private readonly CustomerRepository _customerRepository = new CustomerRepository();
+        private readonly CustomerRepository _customerDatabase = new CustomerRepository();
         public void Run()
         {
             SeedCustomer();
@@ -39,7 +39,7 @@ namespace _05_GreetingConsoleApp
                     RunMenu();
                     break;
                 case "3":
-                    UpdateCustomer(); //NEED HELP
+                    UpdateCustomer(); 
                     Console.Clear();
                     RunMenu();
                     break;
@@ -97,7 +97,8 @@ namespace _05_GreetingConsoleApp
                     break;
             }
 
-            _customerRepository.CustomerEmail(customer);
+            _customerDatabase.CustomerEmail(customer);
+            _customerDatabase.AddCustomerToDatabase(customer);
 
             Console.WriteLine($"You have successfully added Customer ID: {customer.CustomerID} to the database.\n" +
                 "Press any key to continue...");
@@ -106,12 +107,13 @@ namespace _05_GreetingConsoleApp
 
         private void ShowAllCustomers()
         {
-            Dictionary<int, Customer> listOfCustomers = _customerRepository.GetAllCustomers();
-
-            foreach(KeyValuePair<int, Customer> kvp in listOfCustomers)
+            Dictionary<int, Customer> listOfCustomers = _customerDatabase.GetAllCustomers();
+            var header = new StringBuilder();
+            header.Append(String.Format("{0,-12} {1,-12} {2,-12} {3,-12}\n", "First Name", "Last Name", "Type", "Email"));
+            Console.WriteLine(header);
+            foreach (KeyValuePair<int, Customer> kvp in listOfCustomers)
             {
-                DisplayContent(kvp.Value);
-                Console.WriteLine("----------------------");
+                DisplayCustomers(kvp.Value);
             }
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
@@ -125,7 +127,7 @@ namespace _05_GreetingConsoleApp
 
             Console.WriteLine("Enter the customer ID that belongs to the customer you wish to update?");
             int existingCustomerId = int.Parse(Console.ReadLine());
-            Customer foundCustomer = _customerRepository.GetCustomerById(existingCustomerId);
+            Customer foundCustomer = _customerDatabase.GetCustomerById(existingCustomerId);
             Customer newCustomer = new Customer();
             if (foundCustomer != null)
             {
@@ -167,12 +169,12 @@ namespace _05_GreetingConsoleApp
         private void DeleteCustomer()
         {
             Console.WriteLine("Which customer do you wish to delete?");
-            Dictionary<int, Customer > customerList = _customerRepository.GetAllCustomers();
+            Dictionary<int, Customer > customerList = _customerDatabase.GetAllCustomers();
             int count = 0;
             foreach(KeyValuePair<int, Customer> kvp in customerList)
             {
                 count++;
-                Console.WriteLine($"{count}.{kvp.Value.CustomerID}");
+                Console.WriteLine($"{count}. {kvp.Value.FirstName} {kvp.Value.LastName}");
             }
 
             int targetCustomerId = int.Parse(Console.ReadLine());
@@ -180,7 +182,7 @@ namespace _05_GreetingConsoleApp
             if (targetIndex >= 0 && targetIndex < customerList.Count)
             {
                 Customer desiredCustomer = customerList[targetIndex];
-                if (_customerRepository.DeleteExistingCustomer(desiredCustomer))
+                if (_customerDatabase.DeleteExistingCustomer(desiredCustomer))
                 {
                     Console.WriteLine($"{desiredCustomer.CustomerID} successfully removed.");
                 }
@@ -199,23 +201,22 @@ namespace _05_GreetingConsoleApp
 
         private void AlphabetizedCustomers()
         {
-            Dictionary<int, Customer> listOfCustomers = _customerRepository.GetAllCustomers();
+            Dictionary<int, Customer> listOfCustomers = _customerDatabase.GetAllCustomers();
 
             foreach (KeyValuePair<int, Customer> kvp in listOfCustomers.OrderBy(key => key.Value.LastName))
             {
-                DisplayContent(kvp.Value);
+                DisplayCustomers(kvp.Value);
             }
 
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
         }
 
-        private void DisplayContent(Customer customer)
-        {
-            Console.WriteLine($"{customer.CustomerID}");
-            Console.WriteLine($"{customer.FirstName}");
-            Console.WriteLine($"{customer.LastName}");
-            Console.WriteLine($"{customer.Type}");
+        private void DisplayCustomers(Customer customer)
+        { 
+            var sb = new StringBuilder();
+            sb.Append(String.Format("{0,-12} {1,-12} {2,-12} {3,-12}\n", customer.FirstName, customer.LastName, customer.Type, customer.Email));
+            Console.WriteLine(sb);
         }
 
         private void SeedCustomer()
@@ -223,6 +224,10 @@ namespace _05_GreetingConsoleApp
             Customer customerOne = new Customer(1, "Danny", "Redden", _05_GreetingClassLibrary.Type.Current, "Thank you for your work with us. We appreciate your loyalty. Here's a coupon.");
             Customer customerTwo = new Customer(2, "Noah", "Anderson", _05_GreetingClassLibrary.Type.Potential, "We currently have the lowest rates on Helicopter Insurance!");
             Customer customerThree = new Customer(3, "Kaleb", "Miller", _05_GreetingClassLibrary.Type.Past, "It's been a long time since we've heard from you, we want you back");
+
+            _customerDatabase.AddCustomerToDatabase(customerOne);
+            _customerDatabase.AddCustomerToDatabase(customerTwo);
+            _customerDatabase.AddCustomerToDatabase(customerThree);
         }
     }
 }
