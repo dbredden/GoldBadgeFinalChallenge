@@ -147,6 +147,10 @@ namespace _01_CafeConsoleApp
             Menu menuItemOne = new Menu(1, "Cheeseburger", "Our original world-famous cheeseburger", "buns, beef, cheese, lettuce, tomato, pickles, mystery sauce", 5);
             Menu menuItemTwo = new Menu(2, "Hamburger", "Our original world-famous hamburger", "buns, beef, lettuce, tomato, pickles, mystery sauce", 4);
             Menu menuItemThree = new Menu(3, "Chicken Strips", "Our original world-famous chicken strips", "chicken, breading, side of mystery sauce", 6);
+
+            _menuRepo.AddMenuItemToDirectory(menuItemOne);
+            _menuRepo.AddMenuItemToDirectory(menuItemTwo);
+            _menuRepo.AddMenuItemToDirectory(menuItemThree);
         }
     }
 }
