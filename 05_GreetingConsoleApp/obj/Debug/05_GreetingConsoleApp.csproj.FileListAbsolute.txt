@@ -1,0 +1,10 @@
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingConsoleApp\bin\Debug\05_GreetingConsoleApp.exe.config
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingConsoleApp\bin\Debug\05_GreetingConsoleApp.exe
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingConsoleApp\bin\Debug\05_GreetingConsoleApp.pdb
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingConsoleApp\bin\Debug\05_GreetingClassLibrary.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingConsoleApp\bin\Debug\05_GreetingClassLibrary.pdb
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingConsoleApp\obj\Debug\05_GreetingConsoleApp.csproj.AssemblyReference.cache
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingConsoleApp\obj\Debug\05_GreetingConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingConsoleApp\obj\Debug\05_GreetingConsoleApp.csproj.CopyComplete
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingConsoleApp\obj\Debug\05_GreetingConsoleApp.exe
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingConsoleApp\obj\Debug\05_GreetingConsoleApp.pdb

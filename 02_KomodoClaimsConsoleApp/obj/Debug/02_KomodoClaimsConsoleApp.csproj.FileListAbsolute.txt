@@ -1,0 +1,10 @@
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsConsoleApp\bin\Debug\02_KomodoClaimsConsoleApp.exe.config
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsConsoleApp\bin\Debug\02_KomodoClaimsConsoleApp.exe
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsConsoleApp\bin\Debug\02_KomodoClaimsConsoleApp.pdb
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsConsoleApp\bin\Debug\02_KomodoClaimsClassLibrary.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsConsoleApp\bin\Debug\02_KomodoClaimsClassLibrary.pdb
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsConsoleApp\obj\Debug\02_KomodoClaimsConsoleApp.csproj.AssemblyReference.cache
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsConsoleApp\obj\Debug\02_KomodoClaimsConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsConsoleApp\obj\Debug\02_KomodoClaimsConsoleApp.csproj.CopyComplete
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsConsoleApp\obj\Debug\02_KomodoClaimsConsoleApp.exe
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsConsoleApp\obj\Debug\02_KomodoClaimsConsoleApp.pdb

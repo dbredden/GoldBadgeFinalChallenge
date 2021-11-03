@@ -1,0 +1,10 @@
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeConsoleApp\bin\Debug\01_CafeConsoleApp.exe.config
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeConsoleApp\bin\Debug\01_CafeConsoleApp.exe
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeConsoleApp\bin\Debug\01_CafeConsoleApp.pdb
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeConsoleApp\bin\Debug\01_CafeClassLibrary.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeConsoleApp\bin\Debug\01_CafeClassLibrary.pdb
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeConsoleApp\obj\Debug\01_CafeConsoleApp.csproj.AssemblyReference.cache
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeConsoleApp\obj\Debug\01_CafeConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeConsoleApp\obj\Debug\01_CafeConsoleApp.csproj.CopyComplete
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeConsoleApp\obj\Debug\01_CafeConsoleApp.exe
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeConsoleApp\obj\Debug\01_CafeConsoleApp.pdb

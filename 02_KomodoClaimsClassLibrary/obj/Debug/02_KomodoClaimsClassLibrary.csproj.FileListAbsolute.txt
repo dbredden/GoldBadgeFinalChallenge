@@ -1,0 +1,6 @@
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsClassLibrary\bin\Debug\02_KomodoClaimsClassLibrary.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsClassLibrary\bin\Debug\02_KomodoClaimsClassLibrary.pdb
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsClassLibrary\obj\Debug\02_KomodoClaimsClassLibrary.csproj.AssemblyReference.cache
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsClassLibrary\obj\Debug\02_KomodoClaimsClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsClassLibrary\obj\Debug\02_KomodoClaimsClassLibrary.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsClassLibrary\obj\Debug\02_KomodoClaimsClassLibrary.pdb
