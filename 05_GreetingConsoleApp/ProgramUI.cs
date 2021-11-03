@@ -10,6 +10,11 @@ namespace _05_GreetingConsoleApp
     public class ProgramUI
     {
         private readonly CustomerRepository _customerRepository = new CustomerRepository();
+        public void Run()
+        {
+            SeedCustomer();
+            RunMenu();
+        }
 
         public void RunMenu()
         {
@@ -58,7 +63,6 @@ namespace _05_GreetingConsoleApp
                     break;
             }
         }
-
         private void CreateNewCustomer()
         {
             Customer customer = new Customer();
@@ -92,7 +96,11 @@ namespace _05_GreetingConsoleApp
                     Console.WriteLine("Please enter a valid number between 1-3");
                     break;
             }
-            Console.WriteLine("Press any key to continue...");
+
+            _customerRepository.CustomerEmail(customer);
+
+            Console.WriteLine($"You have successfully added Customer ID: {customer.CustomerID} to the database.\n" +
+                "Press any key to continue...");
             Console.ReadKey();
         }
 
@@ -208,6 +216,13 @@ namespace _05_GreetingConsoleApp
             Console.WriteLine($"{customer.FirstName}");
             Console.WriteLine($"{customer.LastName}");
             Console.WriteLine($"{customer.Type}");
+        }
+
+        private void SeedCustomer()
+        {
+            Customer customerOne = new Customer(1, "Danny", "Redden", _05_GreetingClassLibrary.Type.Current, "Thank you for your work with us. We appreciate your loyalty. Here's a coupon.");
+            Customer customerTwo = new Customer(2, "Noah", "Anderson", _05_GreetingClassLibrary.Type.Potential, "We currently have the lowest rates on Helicopter Insurance!");
+            Customer customerThree = new Customer(3, "Kaleb", "Miller", _05_GreetingClassLibrary.Type.Past, "It's been a long time since we've heard from you, we want you back");
         }
     }
 }

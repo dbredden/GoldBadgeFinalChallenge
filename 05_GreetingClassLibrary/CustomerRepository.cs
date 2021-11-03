@@ -59,5 +59,21 @@ namespace _05_GreetingClassLibrary
             bool deleteResult = _customerDatabase.Remove(existingCustomer.CustomerID);
             return deleteResult;
         }
+
+        public void CustomerEmail(Customer customer)
+        {
+            switch(customer.Type)
+            {
+                case Type.Past:
+                    customer.Email = "It's been a long time since we've heard from you, we want you back";
+                    break;
+                case Type.Current:
+                    customer.Email = "Thank you for your work with us. We appreciate your loyalty. Here's a coupon.";
+                    break;
+                case Type.Potential:
+                    customer.Email = "We currently have the lowest rates on Helicopter Insurance!";
+                    break;
+            }
+        }
     }
 }
