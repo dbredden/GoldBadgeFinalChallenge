@@ -22,7 +22,8 @@ namespace _02_KomodoClaimsConsoleApp
             bool isRunning = true;
             while (isRunning)
             {
-                Console.WriteLine("Komodo Insurance\n" +
+                Console.WriteLine("Welcome to Komodo Insurance Claims Deptartment\n\n" +
+                    "Take an action based on the menu below\n\n" +
                     "1. See all Claims\n" +
                     "2. Get next claim.\n" +
                     "3. Add a new claim.\n" +
@@ -56,13 +57,13 @@ namespace _02_KomodoClaimsConsoleApp
         public void SeeAllClaims()
         {
             Queue<Claim> claimList = _claimRepo.GetAllClaims();
-
-            Console.WriteLine("ClaimID     Type     DateOfIncident     DateOfClaim     IsValid     ClaimAmount     Description\n");
+            var header = new StringBuilder();
+            header.Append(String.Format("{0,-10} {1,-12} {2,-15} {3,-12} {4,-16} {5,-16} {6,-12}\n", "ClaimID", "Type", "Description", "Amount", "DateOfAccident", "DateOfClaim", "IsValid"));
+            Console.WriteLine(header);
             foreach (Claim claim in claimList)
             {
-                Console.WriteLine($"{claim.ClaimID}     {claim.ClaimType}     {claim.DateOfIncident.ToShortDateString()}     {claim.DateOfClaim.ToShortDateString()}     {claim.IsValid}     {claim.ClaimAmount}     {claim.Description}");
+                DisplayClaims(claim);
             }
-
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
         }
@@ -121,13 +122,13 @@ namespace _02_KomodoClaimsConsoleApp
             Queue<Claim> queueList = _claimRepo.GetAllClaims();
             Claim nextClaim = queueList.Peek();
 
-            Console.WriteLine($"ID: {nextClaim.ClaimID}\n" +
-                $"Type: {nextClaim.ClaimType}\n" +
-                $"Date of Incident: {nextClaim.DateOfIncident}\n" +
-                $"Date of Claim: {nextClaim.DateOfClaim}\n" +
+            Console.WriteLine($"Claim ID: {nextClaim.ClaimID}\n" +
+                $"Claim Type: {nextClaim.ClaimType}\n" +
+                $"Date of Incident: {nextClaim.DateOfIncident.ToShortDateString()}\n" +
+                $"Date of Claim: {nextClaim.DateOfClaim.ToShortDateString()}\n" +
                 $"Valid: {nextClaim.IsValid}\n" +
                 $"Claim Amount: {nextClaim.ClaimAmount}\n" +
-                $"Description: {nextClaim.Description}\n\n" +
+                $"Claim Description: {nextClaim.Description}\n\n" +
                 $"Do you want to take this claim? Enter the digit 1 or 2. \n" +
                 $"1. Yes\n" +
                 $"2. No\n");
@@ -149,6 +150,13 @@ namespace _02_KomodoClaimsConsoleApp
                     break;
             }
             Console.ReadLine();
+        }
+
+        public void DisplayClaims(Claim claim)
+        {
+            var sb = new StringBuilder();
+            sb.Append(String.Format("{0,-10} {1,-12} {2,-15} {3,-12} {4, -16} {5,-16} {6,-12}\n", claim.ClaimID, claim.ClaimType, claim.Description, claim.ClaimAmount, claim.DateOfIncident.ToShortDateString(), claim.DateOfClaim.ToShortDateString(), claim.IsValid));
+            Console.WriteLine(sb);
         }
 
         public void SeedClaims()

@@ -121,10 +121,6 @@ namespace _05_GreetingConsoleApp
 
         private void UpdateCustomer()
         {
-            // take input to find out who the customer is
-            // go through my customers to find customer by ID input
-            // update info
-
             Console.WriteLine("Enter the customer ID that belongs to the customer you wish to update?");
             int existingCustomerId = int.Parse(Console.ReadLine());
             Customer foundCustomer = _customerDatabase.GetCustomerById(existingCustomerId);
@@ -156,25 +152,22 @@ namespace _05_GreetingConsoleApp
                         Console.ReadKey();
                         break;
                 }
-                //set things equal to a new variable named FoundCustomer
-                //switch case for what the user wants to edit
-                // found customer 1st 
             }
             else
             {
-                Console.WriteLine("There is no customer with that Customer ID");
+                Console.WriteLine("There is no customer with that customer ID");
             }
         }
 
         private void DeleteCustomer()
         {
-            Console.WriteLine("Which customer do you wish to delete?");
+            Console.WriteLine("Enter the customer ID that belongs to the customer you wish to delete:");
             Dictionary<int, Customer > customerList = _customerDatabase.GetAllCustomers();
             int count = 0;
             foreach(KeyValuePair<int, Customer> kvp in customerList)
             {
                 count++;
-                Console.WriteLine($"{count}. {kvp.Value.FirstName} {kvp.Value.LastName}");
+                Console.WriteLine($"{count}. Customer ID: {kvp.Value.CustomerID} {kvp.Value.FirstName} {kvp.Value.LastName}");
             }
 
             int targetCustomerId = int.Parse(Console.ReadLine());
@@ -221,9 +214,9 @@ namespace _05_GreetingConsoleApp
 
         private void SeedCustomer()
         {
-            Customer customerOne = new Customer(1, "Danny", "Redden", _05_GreetingClassLibrary.Type.Current, "Thank you for your work with us. We appreciate your loyalty. Here's a coupon.");
-            Customer customerTwo = new Customer(2, "Noah", "Anderson", _05_GreetingClassLibrary.Type.Potential, "We currently have the lowest rates on Helicopter Insurance!");
-            Customer customerThree = new Customer(3, "Kaleb", "Miller", _05_GreetingClassLibrary.Type.Past, "It's been a long time since we've heard from you, we want you back");
+            Customer customerOne = new Customer(996, "Danny", "Redden", _05_GreetingClassLibrary.Type.Current, "Thank you for your work with us. We appreciate your loyalty. Here's a coupon.");
+            Customer customerTwo = new Customer(997, "Noah", "Anderson", _05_GreetingClassLibrary.Type.Potential, "We currently have the lowest rates on Helicopter Insurance!");
+            Customer customerThree = new Customer(998, "Kaleb", "Miller", _05_GreetingClassLibrary.Type.Past, "It's been a long time since we've heard from you, we want you back");
 
             _customerDatabase.AddCustomerToDatabase(customerOne);
             _customerDatabase.AddCustomerToDatabase(customerTwo);
