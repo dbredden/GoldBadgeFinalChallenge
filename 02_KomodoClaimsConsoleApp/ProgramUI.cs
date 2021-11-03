@@ -13,6 +13,7 @@ namespace _02_KomodoClaimsConsoleApp
 
         public void Run()
         {
+            SeedClaims();
             RunMenu();
         }
 
@@ -59,7 +60,7 @@ namespace _02_KomodoClaimsConsoleApp
             Console.WriteLine("ClaimID     Type     DateOfIncident     DateOfClaim     IsValid     ClaimAmount     Description\n");
             foreach (Claim claim in claimList)
             {
-                Console.WriteLine($"{claim.ClaimID}     {claim.ClaimType}     {claim.DateOfIncident}     {claim.DateOfClaim}     {claim.IsValid}     {claim.ClaimAmount}     {claim.Description}");
+                Console.WriteLine($"{claim.ClaimID}     {claim.ClaimType}     {claim.DateOfIncident.ToShortDateString()}     {claim.DateOfClaim.ToShortDateString()}     {claim.IsValid}     {claim.ClaimAmount}     {claim.Description}");
             }
 
             Console.WriteLine("Press any key to continue...");
@@ -75,9 +76,9 @@ namespace _02_KomodoClaimsConsoleApp
             claim.ClaimID = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Please select a claim type.\n" +
-                "1. Car" +
-                "2. Home" +
-                "3. Theft");
+                "1. Car\n" +
+                "2. Home\n" +
+                "3. Theft\n");
 
             string userInput = Console.ReadLine();
             switch(userInput)
@@ -128,8 +129,8 @@ namespace _02_KomodoClaimsConsoleApp
                 $"Claim Amount: {nextClaim.ClaimAmount}\n" +
                 $"Description: {nextClaim.Description}\n\n" +
                 $"Do you want to take this claim? Enter the digit 1 or 2. \n" +
-                $"1. Yes" +
-                $"2. No");
+                $"1. Yes\n" +
+                $"2. No\n");
 
             string userInput = Console.ReadLine();
             switch (userInput)
@@ -148,7 +149,17 @@ namespace _02_KomodoClaimsConsoleApp
                     break;
             }
             Console.ReadLine();
+        }
 
+        public void SeedClaims()
+        {
+            Claim claimOne = new Claim(1, ClaimType.Home, "roof damage", 200, DateTime.Parse("09/21/2021"), DateTime.Parse("09/25/2021"), true);
+            Claim claimTwo = new Claim(2, ClaimType.Car, "car damage", 300, DateTime.Parse("09/26/2021"), DateTime.Parse("09/30/2021"), true);
+            Claim claimThree = new Claim(3, ClaimType.Theft, "car theft", 5000, DateTime.Parse("09/01/2021"), DateTime.Parse("11/1/2021"), false);
+
+            _claimRepo.AddClaimToDirectory(claimOne);
+            _claimRepo.AddClaimToDirectory(claimTwo);
+            _claimRepo.AddClaimToDirectory(claimThree);
         }
 
     }

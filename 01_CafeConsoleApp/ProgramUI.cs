@@ -13,6 +13,7 @@ namespace _01_CafeConsoleApp
 
         public void Run()
         {
+            SeedMenu();
             RunMenu();
         }
 
@@ -33,12 +34,18 @@ namespace _01_CafeConsoleApp
                 {
                     case "1":
                         CreateMenuItem();
+                        Console.Clear();
+                        RunMenu();
                         break;
                     case "2":
                         DeleteMenuItem();
+                        Console.Clear();
+                        RunMenu();
                         break;
                     case "3":
                         ShowAllMenuItems();
+                        Console.Clear();
+                        RunMenu();
                         break;
                     case "4":
                         continueToRun = false;
@@ -133,6 +140,13 @@ namespace _01_CafeConsoleApp
             Console.WriteLine($"Meal Description: {menuItem.Description}");
             Console.WriteLine($"Meal Ingredients: {menuItem.Ingredients}");
             Console.WriteLine($"Price: {menuItem.Price}");
+        }
+
+        private void SeedMenu()
+        {
+            Menu menuItemOne = new Menu(1, "Cheeseburger", "Our original world-famous cheeseburger", "buns, beef, cheese, lettuce, tomato, pickles, mystery sauce", 5);
+            Menu menuItemTwo = new Menu(2, "Hamburger", "Our original world-famous hamburger", "buns, beef, lettuce, tomato, pickles, mystery sauce", 4);
+            Menu menuItemThree = new Menu(3, "Chicken Strips", "Our original world-famous chicken strips", "chicken, breading, side of mystery sauce", 6);
         }
     }
 }

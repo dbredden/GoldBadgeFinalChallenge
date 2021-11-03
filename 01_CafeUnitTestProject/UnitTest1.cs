@@ -19,13 +19,22 @@ namespace _01_CafeUnitTestProject
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void AddContentToDirectory_Test()
         {
             //ARRANGE
             //ACT
-            //bool wasAdded = _streamingRepo.AddContentToDirectory(_content);
+            //bool wasAdded = _streamingRepo.AddContentToDirectory(_content);    As a developer I want this to return true
             //ASSERT
             //Assert.IsTrue(wasAdded);
+            //Assert.IsNotNull(_content);
+        }
+
+        [TestMethod]
+        public void UpdateExistingContent_Test() // updating _content to see if it returns true
+        {
+            //_content2 = new StreamingContent("Elf", "crazy singing human that thinks he is an elf", 5.0, MaturityRating.PG, GenreType.Comedy);
+            //bool wasFound = _streamingReop.UpdateExistingContent(_content.Title, _content2);
+            //Assert.IsTrue(wasFound);
         }
     }
 }

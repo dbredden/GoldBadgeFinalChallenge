@@ -22,7 +22,7 @@ namespace _02_KomodoClaimsClassLibrary
 
         }
 
-        public Claim(int claimId, ClaimType claimType, string description, double claimAmount, DateTime dateOfIncident, DateTime dateOfClaim)
+        public Claim(int claimId, ClaimType claimType, string description, double claimAmount, DateTime dateOfIncident, DateTime dateOfClaim, bool isValid)
         {
             ClaimID = claimId;
             ClaimType = claimType;
@@ -30,6 +30,7 @@ namespace _02_KomodoClaimsClassLibrary
             ClaimAmount = claimAmount;
             DateOfIncident = dateOfIncident;
             DateOfClaim = dateOfClaim;
+            IsValid = isValid;
         }
 
     }
