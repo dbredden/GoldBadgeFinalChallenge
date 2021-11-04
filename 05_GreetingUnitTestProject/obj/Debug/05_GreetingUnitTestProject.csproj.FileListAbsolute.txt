@@ -1,0 +1,16 @@
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\bin\Debug\05_GreetingUnitTestProject.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\bin\Debug\05_GreetingUnitTestProject.pdb
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\bin\Debug\05_GreetingClassLibrary.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\bin\Debug\05_GreetingClassLibrary.pdb
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\obj\Debug\05_GreetingUnitTestProject.csproj.AssemblyReference.cache
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\obj\Debug\05_GreetingUnitTestProject.csproj.CoreCompileInputs.cache
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\obj\Debug\05_GreetingUnitTestProject.csproj.CopyComplete
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\obj\Debug\05_GreetingUnitTestProject.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\05_GreetingUnitTestProject\obj\Debug\05_GreetingUnitTestProject.pdb

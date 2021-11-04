@@ -10,7 +10,6 @@ namespace _05_GreetingClassLibrary
     {
         private readonly Dictionary<int, Customer> _customerDatabase = new Dictionary<int, Customer>();
 
-        // CREATE
         public bool AddCustomerToDatabase (Customer newCustomer)
         {
             int startingCount = _customerDatabase.Count;
@@ -19,7 +18,6 @@ namespace _05_GreetingClassLibrary
             return wasAdded;
         }
 
-        // READ
         public Dictionary<int, Customer> GetAllCustomers()
         {
             return _customerDatabase;
@@ -35,8 +33,6 @@ namespace _05_GreetingClassLibrary
             return null;
         }
 
-        // UPDATE 
-        
         public bool UpdateCustomer(int originalCustomerId, Customer newCustomer)
         {
             Customer oldCustomer = GetCustomerById(originalCustomerId); 
@@ -51,8 +47,6 @@ namespace _05_GreetingClassLibrary
             }
             return false;
         }
-
-        //DELETE
 
         public bool DeleteExistingCustomer(Customer existingCustomer)
         {
