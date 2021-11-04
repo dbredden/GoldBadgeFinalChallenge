@@ -1,0 +1,16 @@
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\obj\Debug\02_KomodoClaimsUnitTestProject.csproj.AssemblyReference.cache
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\obj\Debug\02_KomodoClaimsUnitTestProject.csproj.CoreCompileInputs.cache
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\bin\Debug\02_KomodoClaimsUnitTestProject.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\bin\Debug\02_KomodoClaimsUnitTestProject.pdb
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\bin\Debug\02_KomodoClaimsClassLibrary.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\bin\Debug\02_KomodoClaimsClassLibrary.pdb
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\obj\Debug\02_KomodoClaimsUnitTestProject.csproj.CopyComplete
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\obj\Debug\02_KomodoClaimsUnitTestProject.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\02_KomodoClaimsUnitTestProject\obj\Debug\02_KomodoClaimsUnitTestProject.pdb

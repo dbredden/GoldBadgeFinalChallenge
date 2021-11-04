@@ -45,5 +45,7 @@ namespace _02_KomodoClaimsClassLibrary
             else
                 claim.IsValid = false;
         }
+
+        // potentially make a get claim by ID method to test IsValid()
     }
 }

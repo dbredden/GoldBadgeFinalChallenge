@@ -26,14 +26,15 @@ namespace _01_CafeUnitTestProject
             Assert.IsTrue(wasAdded);
         }
 
-        //[TestMethod]
-        //public void GetAllMenuItems_Test()
-        //{
-            // add something to the list and get the list back and see if the list is greater than 1, or if it contains my variable. 
-            /*var _menuItem3 = new Menu(3, "burger", "burger", "burger", 5);
+        [TestMethod]
+        public void GetAllMenuItems_Test()
+        {
+            var _menuItem3 = new Menu(3, "Chicken Sandwich", "Our World Famous Chicken sandwich", "Chicken, buns, sauce", 5);
             _menuDirectory.AddMenuItemToDirectory(_menuItem3);
-            Assert.IsTrue(wasAdded);*/
-        //}
+            var menuList = _menuDirectory.GetAllMenuItems();
+            bool wasAdded = menuList.Contains(_menuItem3);
+            Assert.IsTrue(wasAdded);
+        }
 
         [TestMethod]
         public void DeleteMenuItems_Test()
