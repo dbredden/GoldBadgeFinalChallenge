@@ -32,6 +32,5 @@ namespace _02_KomodoClaimsClassLibrary
             DateOfClaim = dateOfClaim;
             IsValid = isValid;
         }
-
     }
 }

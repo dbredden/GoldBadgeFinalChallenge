@@ -10,7 +10,6 @@ namespace _02_KomodoClaimsClassLibrary
     {
         private Queue<Claim> _claimDirectory = new Queue<Claim>();
 
-        // CREATE NEW CLAIM
         public bool AddClaimToDirectory(Claim newClaim)
         {
             int startingCount = _claimDirectory.Count;
@@ -19,13 +18,11 @@ namespace _02_KomodoClaimsClassLibrary
             return wasAdded;
         }
 
-        // READ ALL CLAIMS
         public Queue<Claim> GetAllClaims()
         {
             return _claimDirectory;
         }
         
-        // DELETE TOP QUEUE
         public void RemoveClaim()
         {
             _claimDirectory.Dequeue();
@@ -45,7 +42,5 @@ namespace _02_KomodoClaimsClassLibrary
             else
                 claim.IsValid = false;
         }
-
-        // potentially make a get claim by ID method to test IsValid()
     }
 }

@@ -12,7 +12,6 @@ namespace _05_GreetingUnitTestProject
         private Customer _customer2; 
 
         [TestInitialize]
-
         public void Arrange()
         {
             _customerRepository = new CustomerRepository();

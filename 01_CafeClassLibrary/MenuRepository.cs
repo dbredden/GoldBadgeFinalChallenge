@@ -10,8 +10,6 @@ namespace _01_CafeClassLibrary
     {
         protected readonly List<Menu> _menuDirectory = new List<Menu>(); 
 
-        // CREATE
-
         public bool AddMenuItemToDirectory(Menu menuItem)
         {
             int startingCount = _menuDirectory.Count;
@@ -20,13 +18,11 @@ namespace _01_CafeClassLibrary
             return wasAdded;
         }
 
-        // READ
         public List<Menu> GetAllMenuItems()
         {
             return _menuDirectory;
         }
 
-        // DELETE
         public bool DeleteMenuItem(Menu oldMenuItem)
         {
             bool deleteResult = _menuDirectory.Remove(oldMenuItem);

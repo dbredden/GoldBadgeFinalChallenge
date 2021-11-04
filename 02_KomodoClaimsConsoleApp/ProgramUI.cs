@@ -53,7 +53,6 @@ namespace _02_KomodoClaimsConsoleApp
                 }
             }
         }
-
         public void SeeAllClaims()
         {
             Queue<Claim> claimList = _claimRepo.GetAllClaims();
@@ -169,6 +168,5 @@ namespace _02_KomodoClaimsConsoleApp
             _claimRepo.AddClaimToDirectory(claimTwo);
             _claimRepo.AddClaimToDirectory(claimThree);
         }
-
     }
 }
