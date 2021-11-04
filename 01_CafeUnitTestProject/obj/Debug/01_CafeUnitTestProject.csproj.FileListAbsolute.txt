@@ -1,0 +1,16 @@
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\bin\Debug\01_CafeUnitTestProject.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\bin\Debug\01_CafeUnitTestProject.pdb
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\obj\Debug\01_CafeUnitTestProject.csproj.AssemblyReference.cache
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\obj\Debug\01_CafeUnitTestProject.csproj.CoreCompileInputs.cache
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\obj\Debug\01_CafeUnitTestProject.csproj.CopyComplete
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\obj\Debug\01_CafeUnitTestProject.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\obj\Debug\01_CafeUnitTestProject.pdb
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\bin\Debug\01_CafeClassLibrary.dll
+C:\Users\danny\source\repos\GoldBadgeFinalChallenge\01_CafeUnitTestProject\bin\Debug\01_CafeClassLibrary.pdb

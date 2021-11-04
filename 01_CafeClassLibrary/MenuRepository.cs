@@ -26,8 +26,6 @@ namespace _01_CafeClassLibrary
             return _menuDirectory;
         }
 
-
-
         // DELETE
         public bool DeleteMenuItem(Menu oldMenuItem)
         {

@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using _01_CafeClassLibrary;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
 namespace _01_CafeUnitTestProject
@@ -6,35 +7,44 @@ namespace _01_CafeUnitTestProject
     [TestClass]
     public class UnitTest1
     {
+        private MenuRepository _menuDirectory;
+        private Menu _menuItem1;
+        private Menu _menuItem2;
 
-
-        //Adding a field outside of my methods
-        //private StreamingContentRepository _streamingRepo;              this field is declared but not initialized
-        //private StreamingContent _content;
-        [TestInitialize] 
-        public void Arrange() //This code will be ran before anything else
+        [TestInitialize]
+        public void Arrange() 
         {
-            //_streamingRepo = new StreamingContentRepository();
-            //_content = new StreamingContent("Midnight Mass", "scary stuff", 4.5, MaturityRating.R, GenreType.Thriller);
+            _menuDirectory = new MenuRepository();
+            _menuItem1 = new Menu(1, "Burger", "World Famous Burger", "bun, meat, sauce", 5);
+            _menuItem2 = new Menu(2, "Cheeseburger", "World Famouse Cheeseburger", "bun, meat, cheese, sauce", 6);
         }
 
         [TestMethod]
-        public void AddContentToDirectory_Test()
+        public void AddMenuItemToDirectory_Test()
         {
-            //ARRANGE
-            //ACT
-            //bool wasAdded = _streamingRepo.AddContentToDirectory(_content);    As a developer I want this to return true
-            //ASSERT
-            //Assert.IsTrue(wasAdded);
-            //Assert.IsNotNull(_content);
+            bool wasAdded = _menuDirectory.AddMenuItemToDirectory(_menuItem1);
+            Assert.IsTrue(wasAdded);
         }
 
+        //[TestMethod]
+        //public void GetAllMenuItems_Test()
+        //{
+            // add something to the list and get the list back and see if the list is greater than 1, or if it contains my variable. 
+            /*var _menuItem3 = new Menu(3, "burger", "burger", "burger", 5);
+            _menuDirectory.AddMenuItemToDirectory(_menuItem3);
+            Assert.IsTrue(wasAdded);*/
+        //}
+
         [TestMethod]
-        public void UpdateExistingContent_Test() // updating _content to see if it returns true
+        public void DeleteMenuItems_Test()
         {
-            //_content2 = new StreamingContent("Elf", "crazy singing human that thinks he is an elf", 5.0, MaturityRating.PG, GenreType.Comedy);
-            //bool wasFound = _streamingReop.UpdateExistingContent(_content.Title, _content2);
-            //Assert.IsTrue(wasFound);
+            var _menuItem3 = new Menu(3, "fries", "fries", "fries", 3);
+            _menuDirectory.AddMenuItemToDirectory(_menuItem3);
+
+            bool actual = _menuDirectory.DeleteMenuItem(_menuItem3);
+            bool expected = true;
+
+            Assert.AreEqual(expected, actual);
         }
     }
 }
